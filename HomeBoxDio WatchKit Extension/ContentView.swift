@@ -7,10 +7,83 @@
 //
 
 import SwiftUI
+import Combine
+
+struct RoomsView: View {
+    @EnvironmentObject private var homeBox: HomeBox
+    
+    var body: some View {
+            List {
+                ForEach(homeBox.allRooms) { room in
+                    NavigationLink(destination: DevicesView(room: room)) {
+                        Text(room.name ?? "No Name")
+                    }
+                }
+            }
+    }
+}
+
+struct DevicesView: View {
+    @EnvironmentObject private var homeBox: HomeBox
+    var room: HomeBoxRoom
+    
+    var body: some View {
+        List {
+            ForEach(self.homeBox.allDevices) { device in
+                if device.roomID == self.room.id {
+                    NavigationLink(destination: OnOffView(room: self.room, device: device)) {
+                    Text(device.name)
+                    }
+                }
+            }
+        }
+    }
+}
+
+struct OnOffView: View {
+    @EnvironmentObject private var homeBox: HomeBox
+    var room: HomeBoxRoom
+    var device: HomeBoxDevice
+    
+    var body: some View {
+        VStack {
+            Text(room.name ?? "No Name")
+            Text(device.name)
+            HStack {
+                Image(systemName: "bolt.fill")
+                .font(.largeTitle)
+                    .foregroundColor(.blue)
+                .padding(20)
+                    .onTapGesture {
+                        self.homeBox.sendCommandTo(deviceID: self.device.deviceData["id"], command: "1")
+                }
+                Image(systemName: "bolt.slash.fill")
+                    .font(.largeTitle)
+                    .foregroundColor(.gray)
+                    .padding(20)
+                    .onTapGesture {
+                        self.homeBox.sendCommandTo(deviceID: self.device.deviceData["id"], command: "2")
+                }
+            }
+        }
+    }
+}
+
+
 
 struct ContentView: View {
+    @ObservedObject private var homeBox = HomeBox()
+    
+    init() {
+        self.homeBox.ipAddress = "192.168.123.13"
+    }
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text(homeBox.name)
+            RoomsView()
+            .environmentObject(homeBox)
+        }
     }
 }
 

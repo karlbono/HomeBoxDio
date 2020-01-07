@@ -18,6 +18,7 @@
 		F4BF895E23C4C75900B6D20D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF895D23C4C75900B6D20D /* NotificationView.swift */; };
 		F4BF896023C4C75A00B6D20D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BF895F23C4C75A00B6D20D /* Assets.xcassets */; };
 		F4BF896323C4C75A00B6D20D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BF896223C4C75A00B6D20D /* Preview Assets.xcassets */; };
+		F4BF897423C4C82100B6D20D /* HomeBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF897323C4C82100B6D20D /* HomeBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		F4BF896223C4C75A00B6D20D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4BF896423C4C75A00B6D20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4BF896523C4C75A00B6D20D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F4BF897323C4C82100B6D20D /* HomeBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		F4BF895423C4C75900B6D20D /* HomeBoxDio WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F4BF897323C4C82100B6D20D /* HomeBox.swift */,
 				F4BF895523C4C75900B6D20D /* ContentView.swift */,
 				F4BF895723C4C75900B6D20D /* HostingController.swift */,
 				F4BF895923C4C75900B6D20D /* ExtensionDelegate.swift */,
@@ -276,6 +279,7 @@
 				F4BF895623C4C75900B6D20D /* ContentView.swift in Sources */,
 				F4BF895C23C4C75900B6D20D /* NotificationController.swift in Sources */,
 				F4BF895A23C4C75900B6D20D /* ExtensionDelegate.swift in Sources */,
+				F4BF897423C4C82100B6D20D /* HomeBox.swift in Sources */,
 				F4BF895E23C4C75900B6D20D /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
