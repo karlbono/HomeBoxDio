@@ -10,4 +10,6 @@ I have only tested a limited number of appliances:
 * Sealed remote-controlled On/Off socket
 * Remote-controlled On/off socket
 
-The code is a bit rough but i would enjoy your feedback
+You should change the value of self.homeBox.ipAddress to the IP address of your homebox before compiling.
+
+The code is a bit rough but i would enjoy your feedback. 
