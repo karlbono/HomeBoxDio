@@ -48,21 +48,24 @@ struct OnOffView: View {
     var body: some View {
         VStack {
             Text(room.name ?? "No Name")
+                .font(.system(size: 24))
             Text(device.name)
             HStack {
+                Button(action: {self.homeBox.sendCommandTo(deviceID: self.device.deviceData["id"], command: "1")}) {
                 Image(systemName: "bolt.fill")
-                .font(.largeTitle)
-                    .foregroundColor(.blue)
-                .padding(20)
-                    .onTapGesture {
-                        self.homeBox.sendCommandTo(deviceID: self.device.deviceData["id"], command: "1")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding(20)
+                    .background(Color.green)
+                    .cornerRadius(10)
                 }
+                Button(action: {self.homeBox.sendCommandTo(deviceID: self.device.deviceData["id"], command: "2")}) {
                 Image(systemName: "bolt.slash.fill")
                     .font(.largeTitle)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.white)
                     .padding(20)
-                    .onTapGesture {
-                        self.homeBox.sendCommandTo(deviceID: self.device.deviceData["id"], command: "2")
+                    .background(Color.red)
+                    .cornerRadius(10)
                 }
             }
         }
