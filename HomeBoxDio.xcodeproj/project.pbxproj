@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4BF894223C4C75400B6D20D /* HomeBoxDio WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F4BF894123C4C75400B6D20D /* HomeBoxDio WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F4BF894823C4C75400B6D20D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BF894623C4C75400B6D20D /* Interface.storyboard */; };
+		F4BF894A23C4C75900B6D20D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BF894923C4C75900B6D20D /* Assets.xcassets */; };
+		F4BF895123C4C75900B6D20D /* HomeBoxDio WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F4BF895023C4C75900B6D20D /* HomeBoxDio WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F4BF895623C4C75900B6D20D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF895523C4C75900B6D20D /* ContentView.swift */; };
+		F4BF895823C4C75900B6D20D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF895723C4C75900B6D20D /* HostingController.swift */; };
+		F4BF895A23C4C75900B6D20D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF895923C4C75900B6D20D /* ExtensionDelegate.swift */; };
+		F4BF895C23C4C75900B6D20D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF895B23C4C75900B6D20D /* NotificationController.swift */; };
+		F4BF895E23C4C75900B6D20D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF895D23C4C75900B6D20D /* NotificationView.swift */; };
+		F4BF896023C4C75A00B6D20D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BF895F23C4C75A00B6D20D /* Assets.xcassets */; };
+		F4BF896323C4C75A00B6D20D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BF896223C4C75A00B6D20D /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4BF894323C4C75400B6D20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4BF893723C4C75400B6D20D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BF894023C4C75400B6D20D;
+			remoteInfo = "HomeBoxDio WatchKit App";
+		};
+		F4BF895223C4C75900B6D20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4BF893723C4C75400B6D20D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BF894F23C4C75900B6D20D;
+			remoteInfo = "HomeBoxDio WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4BF896B23C4C75A00B6D20D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F4BF895123C4C75900B6D20D /* HomeBoxDio WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BF896F23C4C75A00B6D20D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F4BF894223C4C75400B6D20D /* HomeBoxDio WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F4BF893D23C4C75400B6D20D /* HomeBoxDio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeBoxDio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BF894123C4C75400B6D20D /* HomeBoxDio WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HomeBoxDio WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BF894723C4C75400B6D20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F4BF894923C4C75900B6D20D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4BF894B23C4C75900B6D20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4BF895023C4C75900B6D20D /* HomeBoxDio WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HomeBoxDio WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BF895523C4C75900B6D20D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4BF895723C4C75900B6D20D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		F4BF895923C4C75900B6D20D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F4BF895B23C4C75900B6D20D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F4BF895D23C4C75900B6D20D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F4BF895F23C4C75A00B6D20D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4BF896223C4C75A00B6D20D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4BF896423C4C75A00B6D20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4BF896523C4C75A00B6D20D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4BF894D23C4C75900B6D20D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4BF893623C4C75400B6D20D = {
+			isa = PBXGroup;
+			children = (
+				F4BF894523C4C75400B6D20D /* HomeBoxDio WatchKit App */,
+				F4BF895423C4C75900B6D20D /* HomeBoxDio WatchKit Extension */,
+				F4BF893E23C4C75400B6D20D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4BF893E23C4C75400B6D20D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4BF893D23C4C75400B6D20D /* HomeBoxDio.app */,
+				F4BF894123C4C75400B6D20D /* HomeBoxDio WatchKit App.app */,
+				F4BF895023C4C75900B6D20D /* HomeBoxDio WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4BF894523C4C75400B6D20D /* HomeBoxDio WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F4BF894623C4C75400B6D20D /* Interface.storyboard */,
+				F4BF894923C4C75900B6D20D /* Assets.xcassets */,
+				F4BF894B23C4C75900B6D20D /* Info.plist */,
+			);
+			path = "HomeBoxDio WatchKit App";
+			sourceTree = "<group>";
+		};
+		F4BF895423C4C75900B6D20D /* HomeBoxDio WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F4BF895523C4C75900B6D20D /* ContentView.swift */,
+				F4BF895723C4C75900B6D20D /* HostingController.swift */,
+				F4BF895923C4C75900B6D20D /* ExtensionDelegate.swift */,
+				F4BF895B23C4C75900B6D20D /* NotificationController.swift */,
+				F4BF895D23C4C75900B6D20D /* NotificationView.swift */,
+				F4BF895F23C4C75A00B6D20D /* Assets.xcassets */,
+				F4BF896423C4C75A00B6D20D /* Info.plist */,
+				F4BF896523C4C75A00B6D20D /* PushNotificationPayload.apns */,
+				F4BF896123C4C75A00B6D20D /* Preview Content */,
+			);
+			path = "HomeBoxDio WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F4BF896123C4C75A00B6D20D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4BF896223C4C75A00B6D20D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4BF893C23C4C75400B6D20D /* HomeBoxDio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BF897023C4C75A00B6D20D /* Build configuration list for PBXNativeTarget "HomeBoxDio" */;
+			buildPhases = (
+				F4BF893B23C4C75400B6D20D /* Resources */,
+				F4BF896F23C4C75A00B6D20D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4BF894423C4C75400B6D20D /* PBXTargetDependency */,
+			);
+			name = HomeBoxDio;
+			productName = HomeBoxDio;
+			productReference = F4BF893D23C4C75400B6D20D /* HomeBoxDio.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		F4BF894023C4C75400B6D20D /* HomeBoxDio WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BF896C23C4C75A00B6D20D /* Build configuration list for PBXNativeTarget "HomeBoxDio WatchKit App" */;
+			buildPhases = (
+				F4BF893F23C4C75400B6D20D /* Resources */,
+				F4BF896B23C4C75A00B6D20D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4BF895323C4C75900B6D20D /* PBXTargetDependency */,
+			);
+			name = "HomeBoxDio WatchKit App";
+			productName = "HomeBoxDio WatchKit App";
+			productReference = F4BF894123C4C75400B6D20D /* HomeBoxDio WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F4BF894F23C4C75900B6D20D /* HomeBoxDio WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BF896823C4C75A00B6D20D /* Build configuration list for PBXNativeTarget "HomeBoxDio WatchKit Extension" */;
+			buildPhases = (
+				F4BF894C23C4C75900B6D20D /* Sources */,
+				F4BF894D23C4C75900B6D20D /* Frameworks */,
+				F4BF894E23C4C75900B6D20D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HomeBoxDio WatchKit Extension";
+			productName = "HomeBoxDio WatchKit Extension";
+			productReference = F4BF895023C4C75900B6D20D /* HomeBoxDio WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4BF893723C4C75400B6D20D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Karl Bono";
+				TargetAttributes = {
+					F4BF893C23C4C75400B6D20D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					F4BF894023C4C75400B6D20D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					F4BF894F23C4C75900B6D20D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = F4BF893A23C4C75400B6D20D /* Build configuration list for PBXProject "HomeBoxDio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4BF893623C4C75400B6D20D;
+			productRefGroup = F4BF893E23C4C75400B6D20D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4BF893C23C4C75400B6D20D /* HomeBoxDio */,
+				F4BF894023C4C75400B6D20D /* HomeBoxDio WatchKit App */,
+				F4BF894F23C4C75900B6D20D /* HomeBoxDio WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4BF893B23C4C75400B6D20D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BF893F23C4C75400B6D20D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BF894A23C4C75900B6D20D /* Assets.xcassets in Resources */,
+				F4BF894823C4C75400B6D20D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BF894E23C4C75900B6D20D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BF896323C4C75A00B6D20D /* Preview Assets.xcassets in Resources */,
+				F4BF896023C4C75A00B6D20D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4BF894C23C4C75900B6D20D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BF895823C4C75900B6D20D /* HostingController.swift in Sources */,
+				F4BF895623C4C75900B6D20D /* ContentView.swift in Sources */,
+				F4BF895C23C4C75900B6D20D /* NotificationController.swift in Sources */,
+				F4BF895A23C4C75900B6D20D /* ExtensionDelegate.swift in Sources */,
+				F4BF895E23C4C75900B6D20D /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4BF894423C4C75400B6D20D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4BF894023C4C75400B6D20D /* HomeBoxDio WatchKit App */;
+			targetProxy = F4BF894323C4C75400B6D20D /* PBXContainerItemProxy */;
+		};
+		F4BF895323C4C75900B6D20D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4BF894F23C4C75900B6D20D /* HomeBoxDio WatchKit Extension */;
+			targetProxy = F4BF895223C4C75900B6D20D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4BF894623C4C75400B6D20D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4BF894723C4C75400B6D20D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4BF896623C4C75A00B6D20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4BF896723C4C75A00B6D20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4BF896923C4C75A00B6D20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeBoxDio WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7PB568D5T8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HomeBoxDio WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bono.HomeBoxDio.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		F4BF896A23C4C75A00B6D20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeBoxDio WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7PB568D5T8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HomeBoxDio WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bono.HomeBoxDio.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		F4BF896D23C4C75A00B6D20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PB568D5T8;
+				IBSC_MODULE = HomeBoxDio_WatchKit_Extension;
+				INFOPLIST_FILE = "HomeBoxDio WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = bono.HomeBoxDio.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		F4BF896E23C4C75A00B6D20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PB568D5T8;
+				IBSC_MODULE = HomeBoxDio_WatchKit_Extension;
+				INFOPLIST_FILE = "HomeBoxDio WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = bono.HomeBoxDio.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		F4BF897123C4C75A00B6D20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7PB568D5T8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bono.HomeBoxDio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F4BF897223C4C75A00B6D20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7PB568D5T8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bono.HomeBoxDio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4BF893A23C4C75400B6D20D /* Build configuration list for PBXProject "HomeBoxDio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BF896623C4C75A00B6D20D /* Debug */,
+				F4BF896723C4C75A00B6D20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BF896823C4C75A00B6D20D /* Build configuration list for PBXNativeTarget "HomeBoxDio WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BF896923C4C75A00B6D20D /* Debug */,
+				F4BF896A23C4C75A00B6D20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BF896C23C4C75A00B6D20D /* Build configuration list for PBXNativeTarget "HomeBoxDio WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BF896D23C4C75A00B6D20D /* Debug */,
+				F4BF896E23C4C75A00B6D20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BF897023C4C75A00B6D20D /* Build configuration list for PBXNativeTarget "HomeBoxDio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BF897123C4C75A00B6D20D /* Debug */,
+				F4BF897223C4C75A00B6D20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4BF893723C4C75400B6D20D /* Project object */;
+}
